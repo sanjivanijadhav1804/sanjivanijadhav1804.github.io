@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanjivani | Python Full Stack and ML Developer</title>
+<meta name="description" content="Portfolio of Sanjivani: Python full stack and machine learning projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3f5fa;
+    --cell: #ffffff;
+    --line: #d3d9e6;
+    --ink: #1b2336;
+    --muted: #55607a;
+    --accent: #2f5bea;
+    --key: #7a3fb0;
+    --str: #a5500b;
+    --ok: #17714a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  header.top { padding: 28px 0 8px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .brand { font-weight: 600; }
+  nav a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+
+  h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 48px 0 12px; letter-spacing: -0.02em; }
+  .lede { font-size: 1.15rem; color: var(--muted); max-width: 60ch; margin: 0 0 32px; }
+
+  .cell { background: var(--cell); border: 1px solid var(--line); border-radius: 6px; display: grid; grid-template-columns: 78px 1fr; margin-bottom: 20px; }
+  .prompt { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 0.82rem; color: var(--accent); padding: 16px 0 0 14px; border-right: 1px solid var(--line); background: #f8f9fd; border-radius: 6px 0 0 6px; }
+  .body { padding: 14px 20px 18px; min-width: 0; }
+  pre { margin: 0; font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 0.9rem; line-height: 1.7; overflow-x: auto; }
+  .k { color: var(--key); }
+  .s { color: var(--str); }
+  .c { color: var(--muted); }
+
+  h2 { font-size: 1.35rem; margin: 0 0 8px; }
+  p { margin: 0 0 12px; max-width: 68ch; }
+  section { scroll-margin-top: 16px; padding-top: 28px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+  .tags li { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 0.82rem; border: 1px solid var(--line); background: #f8f9fd; border-radius: 4px; padding: 3px 9px; }
+
+  .project h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .project h3 a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .project h3 a:hover { color: var(--accent); }
+  .project p { color: var(--muted); font-size: 0.97rem; }
+  .project .tags { margin-top: 10px; }
+
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { padding: 0 0 14px; }
+  .timeline strong { display: block; }
+  .timeline span { color: var(--muted); font-size: 0.95rem; }
+
+  .more { color: var(--muted); font-size: 0.97rem; }
+  .badge { color: var(--ok); font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 0.82rem; }
+
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 560px) {
+    .cell { grid-template-columns: 1fr; }
+    .prompt { border-right: 0; border-bottom: 1px solid var(--line); padding: 8px 14px; border-radius: 6px 6px 0 0; }
+    nav a { margin: 0 14px 0 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="brand">Sanjivani</span>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sanjivani</h1>
+    <p class="lede">I build Python web apps and machine learning projects. I'm looking for a junior developer, full stack or data science role where I can keep learning on real work.</p>
+
+    <div class="cell" aria-label="Summary">
+      <div class="prompt">In [1]:</div>
+      <div class="body"><pre><span class="k">developer</span> = {
+    <span class="s">"focus"</span>: [<span class="s">"Python full stack"</span>, <span class="s">"machine learning"</span>],
+    <span class="s">"studying"</span>: <span class="s">"MCA, Shivaji University"</span>,
+    <span class="s">"training"</span>: <span class="s">"Python Full Stack, Kiran Academy"</span>,
+    <span class="s">"open_to"</span>: [<span class="s">"junior developer"</span>, <span class="s">"full stack"</span>, <span class="s">"data science"</span>],
+    <span class="s">"work_mode"</span>: <span class="s">"remote or Pune"</span>,
+}</pre></div>
+    </div>
+
+    <section id="about">
+      <div class="cell">
+        <div class="prompt">In [2]:</div>
+        <div class="body">
+          <h2>About</h2>
+          <p>I finished my BCA in 2026 and I'm now doing my MCA while training in Python Full Stack Development in Pune. I like projects where data, a model and a working interface come together, such as turning a trained model into an API that other apps can call.</p>
+          <p>I have completed several technical assessments and assignments, including a Dockerized batch-processing task and a React and Express workshop landing page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="cell">
+        <div class="prompt">In [3]:</div>
+        <div class="body">
+          <h2>Skills</h2>
+          <ul class="tags">
+            <li>Python</li><li>Django</li><li>Flask</li><li>FastAPI</li><li>REST APIs</li>
+            <li>SQL / MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+            <li>Machine learning</li><li>Docker</li><li>Git and GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin-bottom:14px">Projects</h2>
+
+      <article class="cell project">
+        <div class="prompt">In [4]:</div>
+        <div class="body">
+          <h3><a href="https://github.com/sanjivanijadhav1804/Health-Insurance-Premium-Prediction-System">Health Insurance Premium Prediction</a></h3>
+          <p>A machine learning model that predicts insurance premiums from personal details. I'm deploying it as a FastAPI service with JWT login and a history of past predictions.</p>
+          <ul class="tags"><li>Python</li><li>Machine learning</li><li>FastAPI</li></ul>
+        </div>
+      </article>
+
+      <article class="cell project">
+        <div class="prompt">In [5]:</div>
+        <div class="body">
+          <h3><a href="https://github.com/sanjivanijadhav1804/Instructor-Effectiveness-Analysis-">Instructor Effectiveness Analysis</a></h3>
+          <p>A data science analysis of instructor effectiveness using K-Means clustering and a Random Forest model.</p>
+          <ul class="tags"><li>Python</li><li>K-Means</li><li>Random Forest</li></ul>
+        </div>
+      </article>
+
+      <article class="cell project">
+        <div class="prompt">In [6]:</div>
+        <div class="body">
+          <h3><a href="https://github.com/sanjivanijadhav1804/support-Agent1">AI Support Agent</a></h3>
+          <p>A support backend that connects to a large language model to answer customer questions.</p>
+          <ul class="tags"><li>Python</li><li>LLM integration</li><li>Backend</li></ul>
+        </div>
+      </article>
+
+      <article class="cell project">
+        <div class="prompt">In [7]:</div>
+        <div class="body">
+          <h3><a href="https://github.com/sanjivanijadhav1804/kidrove-workshop-landing">Workshop Landing Page</a></h3>
+          <p>A landing page for a kids' workshop, built as a front-end assignment.</p>
+          <ul class="tags"><li>Frontend</li><li>Web</li></ul>
+        </div>
+      </article>
+
+      <p class="more">Other work: Online MCQ Examination System (Django and MySQL, with student and admin sides), Car Price Prediction, Customer Churn Prediction, Titanic Survival Prediction and an AI Chat Assistant. All repositories are on <a href="https://github.com/sanjivanijadhav1804">my GitHub profile</a>.</p>
+    </section>
+
+    <section id="education">
+      <div class="cell">
+        <div class="prompt">In [8]:</div>
+        <div class="body">
+          <h2>Education and training</h2>
+          <ul class="timeline">
+            <li><strong>MCA, Shivaji University, Kolhapur</strong><span>2026 to present, expected 2028</span></li>
+            <li><strong>Python Full Stack Development, Kiran Academy, Pune</strong><span>February 2026 to present. Python, Django, SQL, HTML, CSS, JavaScript and React.</span></li>
+            <li><strong>BCA, Mudhoji College, Phaltan (Shivaji University)</strong><span>Graduated 2026 with 80.50%</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="cell">
+        <div class="prompt">In [9]:</div>
+        <div class="body">
+          <h2>Contact</h2>
+          <p>The best way to see my work is on GitHub. To talk about a role, message me on LinkedIn or email me.</p>
+          <p>
+            <a href="https://github.com/sanjivanijadhav1804">github.com/sanjivanijadhav1804</a>
+            <!-- Add your own lines below, then delete this comment:
+            <br><a href="mailto:YOUR-EMAIL">YOUR-EMAIL</a>
+            <br><a href="YOUR-LINKEDIN-URL">LinkedIn</a>
+            -->
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Built with plain HTML and CSS.</footer>
+</div>
+</body>
+</html>
